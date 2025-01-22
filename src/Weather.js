@@ -11,15 +11,26 @@ export default function Weather() {
       </form>
       <div className="Container">
         <h1>London</h1>
+        <h3>Monday, 20th September</h3>
+        <img
+          src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+          alt="cloudy"
+        />
         <div className="row">
-          <ul className="col-9">
-            <li>Monday, September 20</li>
-            <li>4°C</li>
-            <li>overcast clouds</li>
+          <ul className="Weather-type col-7">
+            <li className="Temp">
+              4 <span className="Unit">°C</span>
+            </li>
           </ul>
-          <ul className="col-3">
-            <li>humidity: 87%</li>
-            <li>wind: 2.57 km/h</li>
+          <ul className="col-5">
+            {" "}
+            <li>overcast clouds</li>
+            <li>
+              humidity: <strong>87%</strong>
+            </li>
+            <li>
+              wind: <strong>3.5 km/h</strong>
+            </li>
           </ul>
         </div>
       </div>
