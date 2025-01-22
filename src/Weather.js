@@ -36,7 +36,8 @@ export default function Weather() {
           <div className="row">
             <ul className="Weather-type col-7">
               <li className="Temp">
-                {weatherData.temperature} <span className="Unit">°C</span>
+                {Math.round(weatherData.temperature)}{" "}
+                <span className="Unit">°C</span>
               </li>
             </ul>
             <ul className="col-5">
