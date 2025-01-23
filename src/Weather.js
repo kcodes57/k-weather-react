@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Weather.css";
+import WeatherInfo from "./WeatherInfo";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
-import FormattedDate from "./FormattedDate";
 
 export default function Weather() {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -10,6 +10,7 @@ export default function Weather() {
     console.log(response.data);
     setWeatherData({
       ready: true,
+      city: response.data.city,
       temperature: response.data.temperature.current,
       description: response.data.condition.description,
       icon: response.data.condition.description.icon_url,
@@ -29,31 +30,7 @@ export default function Weather() {
           <input type="search" placeholder="Enter a city" />
           <input type="submit" value="Search" />
         </form>
-        <div className="Container">
-          <h1>London</h1>
-          <h3>
-            <FormattedDate date={weatherData.date} />
-          </h3>
-          <img src={weatherData.icon} alt={weatherData.description} />
-          <div className="row">
-            <ul className="Weather-type col-7">
-              <li className="Temp">
-                {Math.round(weatherData.temperature)}{" "}
-                <span className="Unit">°C</span>
-              </li>
-            </ul>
-            <ul className="col-5">
-              {" "}
-              <li>{weatherData.description}</li>
-              <li>
-                humidity: <strong>{weatherData.humidity}%</strong>
-              </li>
-              <li>
-                wind: <strong>{weatherData.wind} km/h</strong>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
