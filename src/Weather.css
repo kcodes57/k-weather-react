@@ -40,14 +40,6 @@
   margin-top: 75px;
 }
 
-.Weather .Temp {
-  display: float;
-  margin-right: 140px;
-  margin-bottom: 100px;
-}
-.Temp {
-  font-size: 150px;
-}
 .Weather strong {
   color: #f65282;
 }
@@ -56,28 +48,4 @@
   width: 300px;
   height: auto;
   margin: 0 auto;
-}
-.Weather .currentWeatherIcon {
-  image-resolution: from-image 300dpi;
-}
-.Weather .Unit {
-  font-size: 45px;
-  font-weight: 400;
-  position: relative;
-  line-height: 1;
-  top: -65px;
-  left: -35px;
-  text-decoration: none;
-  margin: 7px;
-}
-
-.unitButton {
-  color: #f65282;
-  font-size: 25px;
-  width: 90px;
-  background-color: #082949;
-  margin: 20px;
-  padding: 10px 15px;
-  border-radius: 3px;
-  border: none;
 }
