@@ -1,23 +1,26 @@
 import React from "react";
 import "./Weather.css";
+
 import "bootstrap/dist/css/bootstrap.css";
 import FormattedDate from "./FormattedDate";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
     <div className="Weather-info">
-      <h1>{props.data.city},</h1>
-      <h1>{props.data.country}</h1>
+      <h1 className="City">{props.data.city}</h1>
+      <p className="Country">{props.data.country}</p>
       <h3>
         <FormattedDate date={props.data.date} />
       </h3>
-      <img src={props.data.icon} alt={props.data.description} />
+      <img
+        src={props.data.iconUrl}
+        alt={props.data.description}
+        className="currentWeatherIcon"
+      />
       <div className="row">
         <ul className="Weather-type col-7">
-          <li className="Temp">
-            {Math.round(props.data.temperature)}{" "}
-            <span className="Unit">°C</span>
-          </li>
+          <WeatherTemperature celsius={props.data.temperature} />
         </ul>
         <ul className="col-5">
           {" "}

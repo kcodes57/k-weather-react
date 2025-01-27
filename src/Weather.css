@@ -18,6 +18,11 @@
   font-weight: bold;
   font-size: 75px;
 }
+.Weather .Country {
+  color: #082949;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 .Weather h3 {
   color: #082949;
@@ -32,7 +37,13 @@
 .Weather .col-5 {
   font-size: 25px;
   opacity: 70%;
-  margin-top: 65px;
+  margin-top: 75px;
+}
+
+.Weather .Temp {
+  display: float;
+  margin-right: 140px;
+  margin-bottom: 100px;
 }
 .Temp {
   font-size: 150px;
@@ -46,7 +57,9 @@
   height: auto;
   margin: 0 auto;
 }
-
+.Weather .currentWeatherIcon {
+  image-resolution: from-image 300dpi;
+}
 .Weather .Unit {
   font-size: 45px;
   font-weight: 400;
@@ -54,4 +67,17 @@
   line-height: 1;
   top: -65px;
   left: -35px;
+  text-decoration: none;
+  margin: 7px;
+}
+
+.unitButton {
+  color: #f65282;
+  font-size: 25px;
+  width: 90px;
+  background-color: #082949;
+  margin: 20px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: none;
 }
