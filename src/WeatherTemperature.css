@@ -1,5 +1,5 @@
 .Weather .FahrenheitUnit {
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 400;
   position: relative;
   line-height: 1;
@@ -9,7 +9,7 @@
   margin: 7px;
 }
 .Weather .CelsiusUnit {
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 400;
   position: relative;
   line-height: 1;
