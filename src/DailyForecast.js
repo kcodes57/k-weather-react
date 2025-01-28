@@ -15,8 +15,8 @@ export default function DailyForecast(props) {
 
   return (
     <div className="DailyForecast">
-      <div className="row">
-        <div className="DailyForecast-info column1 col-6">
+      <div className="DailyForecast-info row">
+        <div className="col-6">
           <div className="DailyForecast-day">Fri</div>
           <span className="DailyForecast-maxtemp">18°</span>
           <span>|</span>
