@@ -1,14 +1,18 @@
 .DailyForecast {
   color: aqua;
   background-color: #231ba2;
+  display: grid;
+  grid-template-columns: 200px;
 }
+
 .DailyForecast-maxtemp {
   margin-right: 5px;
 }
 .DailyForecast-mintemp {
   margin-left: 5px;
 }
+
 .DailyForecast-icon {
-  display: flex;
-  justify-content: center;
+  padding-right: 100px;
+  margin-top: 15px;
 }
