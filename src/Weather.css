@@ -1,3 +1,9 @@
+:root {
+  --primary-text-color: #082949;
+  --primary-shadow: -1px -1px 0 #8b8a8a, 1px -1px 0 #8b8a8a, -1px 1px 0 #8b8a8a,
+    1px 1px 0 #8b8a8a;
+}
+
 .Weather {
   border: 1px solid #8bba8c;
   border-radius: 5px;
@@ -7,6 +13,12 @@
   padding: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #4a4db6;
+
+  background: linear-gradient(
+    rgba(29, 30, 71, 1),
+    rgb(57, 54, 116),
+    rgb(54, 66, 134)
+  );
 }
 .Weather form {
   font-family: "Courier New", Courier, monospace;
@@ -14,21 +26,24 @@
   text-align: center;
 }
 .Weather h1 {
-  color: #082949;
+  color: var(--primary-text-color);
   font-weight: bold;
   font-size: 75px;
+  text-shadow: var(--primary-shadow);
 }
 .Weather .Country {
-  color: #082949;
+  color: var(--primary-text-color);
   font-weight: bold;
   font-size: 20px;
+  text-shadow: var(--primary-shadow);
 }
 
 .Weather h3 {
-  color: #082949;
+  color: var(--primary-text-color);
   opacity: 90%;
   font-weight: bold;
   font-size: 35px;
+  text-shadow: var(--primary-shadow);
 }
 
 .Weather li {
