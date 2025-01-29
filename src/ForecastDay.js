@@ -30,7 +30,7 @@ export default function DailyForecast(props) {
           <span>|</span>
           <span className="DailyForecast-mintemp">{minTemp()}</span>
         </div>
-        <WeatherIcon code={props.data.condition.icon} size={512} />
+        <WeatherIcon code={props.data.condition.icon} size={50} />
       </div>
     </div>
   );

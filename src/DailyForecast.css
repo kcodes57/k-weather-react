@@ -1,5 +1,6 @@
 .DailyForecast {
   display: grid;
+  opacity: 80%;
 }
 .DailyForecast-info {
   background-color: #231ba2;
