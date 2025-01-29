@@ -14,9 +14,6 @@
   background-color: #231ba2;
 }
 
-.DailyForecast-icon {
-  padding-right: 100px;
-  margin-top: 15px;
-  background-color: #231ba2;
-  width: 25px;
+.DailyForecast canvas {
+  float: left;
 }

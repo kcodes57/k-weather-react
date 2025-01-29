@@ -58,9 +58,6 @@
 .Weather strong {
   color: #f65282;
 }
-.Weather img {
-  display: block;
-  width: 300px;
-  height: auto;
-  margin: 0 auto;
+.Weather canvas {
+  margin: 10px auto;
 }
