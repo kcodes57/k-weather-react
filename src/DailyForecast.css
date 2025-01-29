@@ -1,8 +1,6 @@
 .DailyForecast {
   color: aqua;
-
   display: grid;
-  grid-template-columns: 200px;
 }
 .DailyForecast-info {
   background-color: #231ba2;
@@ -20,4 +18,5 @@
   padding-right: 100px;
   margin-top: 15px;
   background-color: #231ba2;
+  width: 25px;
 }
