@@ -1,9 +1,9 @@
 .DailyForecast {
-  color: aqua;
   display: grid;
 }
 .DailyForecast-info {
   background-color: #231ba2;
+  color: #2480dd;
 }
 .DailyForecast-maxtemp {
   margin-right: 5px;

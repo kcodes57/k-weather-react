@@ -1,7 +1,5 @@
 :root {
-  --primary-text-color: #082949;
-  --primary-shadow: -1px -1px 0 #8b8a8a, 1px -1px 0 #8b8a8a, -1px 1px 0 #8b8a8a,
-    1px 1px 0 #8b8a8a;
+  --primary-text-color: #2480dd;
 }
 
 .Weather {
