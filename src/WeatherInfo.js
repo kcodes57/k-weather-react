@@ -4,6 +4,7 @@ import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.css";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -13,11 +14,8 @@ export default function WeatherInfo(props) {
       <h3>
         <FormattedDate date={props.data.date} />
       </h3>
-      <img
-        src={props.data.iconUrl}
-        alt={props.data.description}
-        className="currentWeatherIcon"
-      />
+      <WeatherIcon code={props.data.icon} />
+
       <div className="row">
         <ul className="Weather-type col-7">
           <WeatherTemperature celsius={props.data.temperature} />

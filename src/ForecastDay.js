@@ -1,6 +1,4 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon";
-
 import "./DailyForecast.css";
 
 export default function DailyForecast(props) {
@@ -30,10 +28,6 @@ export default function DailyForecast(props) {
           <span className="DailyForecast-maxtemp">{maxTemp()}</span>
           <span>|</span>
           <span className="DailyForecast-mintemp">{minTemp()}</span>
-          <img
-            src={props.data.condition.icon_url}
-            alt={props.data.condition.icon}
-          />
         </div>
       </div>
     </div>
