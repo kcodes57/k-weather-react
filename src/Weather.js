@@ -3,6 +3,7 @@ import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import DailyForecast from "./DailyForecast";
 import "bootstrap/dist/css/bootstrap.css";
+import CodedInfo from "./CodedInfo";
 import axios from "axios";
 
 export default function Weather(props) {
@@ -50,6 +51,7 @@ export default function Weather(props) {
         </form>
         <WeatherInfo data={weatherData} />
         <DailyForecast city={weatherData.city} />
+        <CodedInfo />
       </div>
     );
   } else {

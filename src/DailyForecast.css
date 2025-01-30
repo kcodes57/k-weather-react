@@ -1,20 +1,18 @@
 .DailyForecast {
   display: grid;
-  opacity: 80%;
+  opacity: 90%;
 }
 .DailyForecast-info {
-  background-color: #231ba2;
   color: #2480dd;
+  justify-content: space-around;
 }
 .DailyForecast-maxtemp {
   margin-right: 5px;
-  background-color: #231ba2;
 }
 .DailyForecast-mintemp {
   margin-left: 5px;
-  background-color: #231ba2;
 }
 
-.DailyForecast canvas {
-  float: left;
+.DailyForecast-info .row {
+  background-color: #231ba2;
 }
