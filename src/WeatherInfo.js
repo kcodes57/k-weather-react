@@ -1,6 +1,5 @@
 import React from "react";
 import "./Weather.css";
-
 import "bootstrap/dist/css/bootstrap.css";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
@@ -21,7 +20,6 @@ export default function WeatherInfo(props) {
           <WeatherTemperature celsius={props.data.temperature} />
         </ul>
         <ul className="col-5">
-          {" "}
           <li>{props.data.description}</li>
           <li>
             humidity: <strong>{props.data.humidity}</strong>
